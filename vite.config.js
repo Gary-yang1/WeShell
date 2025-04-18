@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://192.168.31.11:8080',  // 设置代理目标地址
+        target: 'http://127.0.0.1:8080',  // 设置代理目标地址
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
